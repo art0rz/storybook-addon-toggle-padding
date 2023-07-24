@@ -43,11 +43,9 @@
     "prebuild": "yarn clean",
     "build": "tsup",
     "build:watch": "yarn build --watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p build:watch 'storybook --quiet'",
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
-    "eject-ts": "zx scripts/eject-typescript.mjs",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -100,7 +98,7 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Padding Toggle",
+    "displayName": "Toggle padding",
     "supportedFrameworks": [
       "react", "vue", "angular", "web-components", "ember", "html", "svelte", "preact", "react-native"
     ],
